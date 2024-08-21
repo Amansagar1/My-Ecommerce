@@ -1,0 +1,16 @@
+{
+    "name": "New Relaxed Fit Sweatshirt Vol. III",
+    "price": 899,
+    "discountedPrice": 799,
+    "images": [
+      "/path/to/image1.png",
+      "/path/to/image2.png",
+      "/path/to/image3.png"
+    ],
+    "colors": ["Black", "Cream", "Green", "Blue", "Red"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+    "availableSize": "S",
+    "stock": 5,
+    "description": "Top in sweatshirt fabric made from a cotton blend with a soft brushed inside. Relaxed fit with dropped shoulders, long sleeves, and ribbing around the neckline, cuffs, and hem."
+  }
+  

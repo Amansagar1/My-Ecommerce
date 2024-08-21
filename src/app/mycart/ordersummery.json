@@ -1,0 +1,16 @@
+{
+    "quantity": 2,
+    "color": "Brown",
+    "size": "S",
+    "price": 1798,
+    "discount": {
+      "percentage": 10,
+      "amount": 179.8
+    },
+    "delivery": {
+      "type": "Regular",
+      "cost": 3.99
+    },
+    "subTotal": 1622.19
+  }
+  

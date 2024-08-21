@@ -1,0 +1,45 @@
+{
+  "socialMediaLinks": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com",
+      "icon": "FaFacebookF"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://www.twitter.com",
+      "icon": "FaTwitter"
+    },
+    {
+      "name": "Google",
+      "url": "https://www.google.com",
+      "icon": "FaGoogle"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com",
+      "icon": "FaInstagram"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com",
+      "icon": "FaLinkedinIn"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://www.github.com",
+      "icon": "FaGithub"
+    }
+  ],
+  "contact": {
+    "phone": "+918434120273",
+    "email": "info@example.com",
+    "address": "Bhagalpur (Bihar) 812001 India"
+  },
+  "subscribe": {
+    "placeholder": "Enter your email",
+    "buttonText": "Subscribe"
+  },
+  "programs": ["Corporate", "One to One", "Consulting"],
+  "service": ["Training", "Coaching", "Consulting"]
+}

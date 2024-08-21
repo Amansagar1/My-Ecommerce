@@ -1,0 +1,11 @@
+{
+    "links": [
+      { "name": "HOME", "path": "/" },
+      { "name": "LOOK-BOOK", "path": "/lookbook" },
+      { "name": "SPECIAL OFFERS", "path": "/special-offers" },
+      { "name": "ABOUT", "path": "/aboutus" },
+      { "name": "CONTACT", "path": "/contact" }
+      
+    ]
+  }
+  

@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "label": "active listings worldwide",
+      "value": 7700,
+      "suffix": "+"
+    },
+    {
+      "id": 2,
+      "label": "cities and towns with active Sagar Sharma listings",
+      "value": 1000,
+      "suffix": "+"
+    },
+    {
+      "id": 3,
+      "label": "countries and regions with Sagar Sharma  listings",
+      "value": 220,
+      "suffix": "+"
+    },
+    {
+      "id": 4,
+      "label": "Sagar Sharma  guest arrivals all-time",
+      "value": 15000,
+      "suffix": "+"
+    },
+    {
+      "id": 5,
+      "label": "hosts on Sagar Sharma ",
+      "value": 500,
+      "suffix": "+"
+    },
+    {
+      "id": 6,
+      "label": "earned by the typical US host in 2023",
+      "value": 1400,
+      "prefix": "$"
+    },
+    {
+      "id": 7,
+      "label": "total taxes collected and remitted globally",
+      "value": 1000,
+      "suffix": "+"
+    }
+    
+  ]
+  

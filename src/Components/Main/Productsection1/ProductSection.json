@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Ullam Neque Dras Toncorper",
+      "description": "Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and...",
+      "price": "$60.00",
+      "originalPrice": "$100.00",
+      "discount": "-40%",
+      "imageUrl": "https://via.placeholder.com/150",
+      "timer": { "hours": 0, "minutes": 0, "seconds": 0 }
+    },
+    {
+      "id": 2,
+      "title": "Toncorper Ullam Neque Dras",
+      "description": "You can either write your own summary or show a part of the description as a summary...",
+      "price": "$60.00",
+      "originalPrice": "$100.00",
+      "discount": "-40%",
+      "imageUrl": "https://via.placeholder.com/150",
+      "timer": { "hours": 0, "minutes": 0, "seconds": 0 }
+    },
+    {
+      "id": 3,
+      "title": "Ullam Corper Cacer Rotat Racer",
+      "description": "Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and...",
+      "price": "$80.00",
+      "originalPrice": "$99.00",
+      "discount": "-19%",
+      "imageUrl": "https://via.placeholder.com/150",
+      "soldOut": true
+    },
+    {
+      "id": 4,
+      "title": "Rotat Racer Ullam Corper",
+      "description": "Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and...",
+      "price": "$100.00",
+      "originalPrice": "$150.00",
+      "discount": "-33%",
+      "imageUrl": "https://via.placeholder.com/150"
+    }
+  ]
+  

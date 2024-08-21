@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Best Selling",
+      "items": 12,
+      "image": "/images/best-selling.jpg"
+    },
+    {
+      "name": "Featured",
+      "items": 12,
+      "image": "/images/featured.jpg"
+    },
+    {
+      "name": "Home page",
+      "items": 12,
+      "image": "/images/home-page.jpg"
+    },
+    {
+      "name": "Latest",
+      "items": 12,
+      "image": "/images/latest.jpg"
+    },
+    {
+      "name": "Trending",
+      "items": 12,
+      "image": "/images/trending.jpg"
+    }
+  ]
+  

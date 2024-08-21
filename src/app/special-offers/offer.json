@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "title": "Exclusive T-Shirt Offer",
+      "description": "Get 30% off on our latest collection!",
+      "price": "$20.00",
+      "image": "/images/tshirt1.png"
+    },
+    {
+      "id": 2,
+      "title": "Summer Collection Discount",
+      "description": "Flat 25% off on all summer wear.",
+      "price": "$18.00",
+      "image": "/images/tshirt2.png"
+    },
+    {
+      "id": 3,
+      "title": "Buy One, Get One Free",
+      "description": "Limited offer on selected items!",
+      "price": "$25.00",
+      "image": "/images/tshirt3.png"
+    },
+    {
+      "id": 4,
+      "title": "Professional Wear Sale",
+      "description": "Get up to 40% off on business casuals.",
+      "price": "$30.00",
+      "image": "/images/tshirt4.png"
+    },
+    {
+      "id": 5,
+      "title": "Weekend Special Offer",
+      "description": "Extra 10% off on your weekend purchase.",
+      "price": "$22.00",
+      "image": "/images/tshirt5.png"
+    },
+    {
+      "id": 6,
+      "title": "New Arrivals Discount",
+      "description": "20% off on all new arrivals.",
+      "price": "$28.00",
+      "image": "/images/tshirt6.png"
+    },
+    {
+      "id": 7,
+      "title": "Winter Sale",
+      "description": "Up to 35% off on winter wear.",
+      "price": "$32.00",
+      "image": "/images/tshirt7.png"
+    },
+    {
+      "id": 8,
+      "title": "Back to School",
+      "description": "Special prices for students.",
+      "price": "$15.00",
+      "image": "/images/tshirt8.png"
+    },
+    {
+      "id": 9,
+      "title": "Flash Sale",
+      "description": "Grab these deals before they're gone.",
+      "price": "$18.00",
+      "image": "/images/tshirt9.png"
+    },
+    {
+      "id": 10,
+      "title": "End of Season Sale",
+      "description": "Last chance to save big!",
+      "price": "$20.00",
+      "image": "/images/tshirt10.png"
+    }
+  ]
+  

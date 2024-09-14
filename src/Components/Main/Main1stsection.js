@@ -7,8 +7,8 @@ const Main1stsection = () => {
       <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         {/* Heading Section */}
         <div className="mb-8">
-          <p className="text-sm font-medium text-gray-600 uppercase tracking-wide">Hello World !</p>
-          <h1 className="text-4xl font-bold text-gray-900 mt-2">Welcome to Store</h1>
+          <p className="text-sm font-medium text-gray-600 uppercase tracking-wide">our Trusted</p>
+          <h1 className="text-4xl font-bold text-gray-900 mt-2">Welcome to T-Shirt Store</h1>
           <p className="mt-4 text-gray-600">
             We are a team of designers and developers that create high-quality Magento, Prestashop, Opencart themes
             and provide premium and dedicated support to our products.

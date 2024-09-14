@@ -1,10 +1,11 @@
 "use client";
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { FaSearch, FaCog, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
+import { FaSearch, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import navigationData from './Navigation.json';
+import { colors } from '../../color/color'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,19 +40,19 @@ const Navbar = () => {
   const linkVariants = {
     hover: {
       scale: 1.1,
-      color: "#0070f3",
+      color: colors.linkHoverColor, // Apply hover color
       transition: { type: "spring", stiffness: 300 },
     },
   };
 
   return (
-    <nav className="bg-gradient-to-b from-white to-blue-100 shadow-md">
+    <nav className="shadow-md" style={{ background: colors.navbarBackground }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-gray-800">
-              Sagar Sharma
+            <Link href="/" className="text-2xl font-bold text-white " >
+           T-Shirt Logo
             </Link>
           </div>
           {/* Desktop Nav Links */}
@@ -63,7 +64,7 @@ const Navbar = () => {
                 variants={linkVariants}
                 className={router.pathname === item.path ? "text-blue-500" : "text-gray-800"}
               >
-                <Link href={item.path} className="hover:text-gray-600">
+                <Link href={item.path} className="hover:text-gray-600" style={{ color: colors.linkColor }}>
                   {item.name}
                 </Link>
               </motion.div>
@@ -71,35 +72,42 @@ const Navbar = () => {
           </div>
           {/* Right Side Icons and Hamburger Menu */}
           <div className="flex items-center space-x-4">
-            <div className="relative flex items-center  text-[12px] gap-2">
-            
+            <div className="relative flex items-center text-[12px] gap-2">
               {searchOpen && (
-                <form onSubmit={handleSearchSubmit} className="  ">
+                <form onSubmit={handleSearchSubmit} className="">
                   <input
                     type="text"
                     value={searchQuery}
                     onChange={handleSearchChange}
-                    className="bg-white  rounded-md p-2 border border-gray-300 focus:outline-none"
+                    className="rounded-md p-2 border"
+                    style={{
+                      background: colors.searchBarBackground,
+                      borderColor: colors.searchBarBorderColor,
+                    }}
                     placeholder="Search products..."
                   />
                 </form>
               )}
-              <div className=" bg-white rounded-full w-6 h-6 border text flex items-center justify-center">
-              <FaSearch 
-                className="w-full  hover:text-gray-600 cursor-pointer" 
-                onClick={toggleSearch} 
-              />
+              <div
+                className="rounded-full w-6 h-6 border flex items-center justify-center"
+                style={{ background: colors.iconColor }}
+              >
+                <FaSearch className="cursor-pointer" onClick={toggleSearch} />
               </div>
             </div>
-            {/* <FaCog className="text-gray-800 hover:text-gray-600 cursor-pointer" /> */}
             <Link href="/mycart" className="relative">
-              <FaShoppingCart className="text-gray-800 hover:text-gray-600 cursor-pointer" />
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">0</span>
+              <FaShoppingCart className="cursor-pointer" style={{ color: colors.iconColor }} />
+              <span
+                className="absolute -top-2 -right-2 text-xs rounded-full px-1"
+                style={{ background: colors.cartBadgeColor }}
+              >
+                0
+              </span>
             </Link>
             {/* Hamburger Menu Icon for Mobile */}
             <div className="block xl:hidden">
               <button onClick={toggleMenu}>
-                {isOpen ? <FaTimes className="text-gray-800 hover:text-gray-600 cursor-pointer" /> : <FaBars className="text-gray-800 hover:text-gray-600 cursor-pointer" />}
+                {isOpen ? <FaTimes className="cursor-pointer" /> : <FaBars className="cursor-pointer" />}
               </button>
             </div>
           </div>
@@ -110,12 +118,13 @@ const Navbar = () => {
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
         variants={menuVariants}
-        className="xl:hidden bg-white shadow-md"
+        className="xl:hidden shadow-md"
+        style={{ background: colors.menuBackground }}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           {navigationData.links.map((item) => (
             <motion.div key={item.name} whileHover="hover" variants={linkVariants}>
-              <Link href={item.path} className="block text-gray-800 hover:text-gray-600">
+              <Link href={item.path} className="block" style={{ color: colors.menuTextColor }}>
                 {item.name}
               </Link>
             </motion.div>

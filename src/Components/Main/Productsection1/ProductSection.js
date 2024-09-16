@@ -1,11 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import products from './ProductSection.json';
+import axios from 'axios';
 
 const ProductSection = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Fetch data from API
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/products');
+        setProducts(response.data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        setError('Failed to fetch products.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) return <p className="text-center text-lg">Loading...</p>;
+  if (error) return <p className="text-center text-lg text-red-500">{error}</p>;
+
   return (
     <div className="container mx-auto p-5 bg-gradient-to-b from-white to-blue-50">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {products.map((product) => (
           <div
             key={product.id}
@@ -13,15 +37,17 @@ const ProductSection = () => {
           >
             <div className="w-full lg:w-1/3 p-4 relative">
               <Image
-                href={product.imageUrl}
+                src={product.imageUrl}
                 alt={product.title}
                 width={300}
                 height={300}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-0 left-0 bg-red-500 text-white p-2 rounded-full text-xs ">
-                {product.discount}
-              </div>
+              {product.discount && (
+                <div className="absolute top-0 left-0 bg-red-500 text-white p-2 rounded-full text-xs">
+                  {product.discount}
+                </div>
+              )}
               {product.soldOut && (
                 <div className="absolute top-0 right-0 bg-gray-500 text-white p-2 rounded-full text-xs">
                   Sold Out
